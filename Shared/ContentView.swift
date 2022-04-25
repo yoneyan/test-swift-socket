@@ -10,7 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+                .padding()
+        Button(action: {
+            print("タップされました")
+//            ChatClient(ip: "rtk2go.com", port: 2101)
+//            Connection().example()
+            Connection1(hostName: "RTK2go.com", port: 2101).run()
+        }) {
+            Image(systemName: "video.fill")
+            Text("Test").font(.largeTitle)
+        }
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct TestRtkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(connection1: Connection1(hostName: "RTK2go.com", port: 2101))
         }
     }
 }

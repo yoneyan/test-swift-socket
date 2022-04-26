@@ -220,7 +220,7 @@ class Connection1: NSObject,ObservableObject {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyy-MM-dd HH:mm:ss", options: 0, locale: Locale(identifier: "ja_JP"))
 
-                self.data = dateFormatter.string(from: dt) + "| length: "+String(data.count) + " hex: " + data.hex  + "\n" + self.data
+                self.data = dateFormatter.string(from: dt) + "| length: "+String(data.count) + " hex: " + data.hex  + "\n"
 //                self.data += "length: "+String(data.count) + "\n"
                 self.data1 += "length: "+String(data.count) + "\n"
 //                let tmp = NSString(data: data.length!, encoding: NSUTF8StringEncoding)
